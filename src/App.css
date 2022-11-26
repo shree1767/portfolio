@@ -10,3 +10,12 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+@font-face {
+  font-family: "Poppins";
+  src: url(https://fonts.google.com/specimen/Poppins) format("truetype");
+}
+@font-face {
+  font-family: "Big-Shoulders-Text";
+  src: url(https://fonts.google.com/specimen/Big+Shoulders+Text) format("truetype");
+}
