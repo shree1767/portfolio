@@ -27,11 +27,11 @@ export const Navbar = () => {
     <div class="w-8 h-0.5 bg-white"></div>
     <div class="w-8 h-0.5 bg-white"></div>
     
-   <div className='absolute top-0 -right-full h-screen w-3/5 backdrop-blur-xl bg-[#000] opacity-0 group-focus:right-0 group-focus:opacity-95 bg-opacity-40 transition-all duration-500'>
-      <ul className='flex flex-col items-center -w-10 text-base cursor-pointer pt-20 mt-20'>
-        <a><li className='pt-20 px-6 w-full text-white'>ABOUT</li></a>
-        <a><li className='pt-10 px-6 w-full text-white'>WORKS</li></a>
-        <a><li className='pt-10 px-6 w-full text-white'>RESUME</li></a>
+   <div className='absolute top-0 -right-full h-screen w-3/5 backdrop-blur-xl bg-[#000] opacity-0 group-focus:right-0 group-focus:opacity-100 bg-opacity-40 transition-all duration-500'>
+      <ul className='flex flex-col items-center -w-10 bg-[#000] bg-opacity-5 backdrop-blur-xl  cursor-pointer pt-20 mt-20'>
+        <li className=' pt-20 px-6 w-full bg-inherit text-white '><a href='#about'>ABOUT</a></li>
+        <li className='pt-10 px-6 w-full bg-inherit text-white '><a href='#works'>WORKS</a></li>
+        <li className='pt-10 pb-20 px-6 w-full bg-inherit text-white'><a href='#'>RESUME</a></li>
       </ul>
     </div>
   </button>

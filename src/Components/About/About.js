@@ -29,7 +29,7 @@ export const About = ({width, percent}) => {
     <div className='md:block hidden mt-20 pt-20' id='about'>
       <img src={heading}/>
     </div>
-    <div className='md:hidden block text-center mt-20 pt-20'>
+    <div className='md:hidden block justify-center mt-20 pt-20'>
       <img src={mbheading} className='mx-auto'/>
     </div>
     <div className='md:flex md:mt-2 md:mb-20 md:mx-20'>
@@ -62,12 +62,13 @@ export const About = ({width, percent}) => {
         </div>
 
         {/* image */}
-        <div className='pt-20 md:mt-20'>
-            <img src={female} className='w-100 md:px-0 px-10'/>
+        <div className='pt-20 md:mt-20 justify-center '>
+            <img src={female} className='w-2/3 md:w-100 md:px-0 mx-auto'/>
         </div>
     </div>
+
     <div className='mt-20 block md:hidden justify-center'> 
-      <img src={tools2} className='mx-auto'/>
+      <img src={tools2} className='w-1/2 mx-auto'/>
     </div>
     <div className='mt-20 pt-20 hidden md:block justify-center'>
       <img src={tools3} className='mx-auto'/>
@@ -76,9 +77,9 @@ export const About = ({width, percent}) => {
       <img className='absolute right-0 mr-20 pr-10' src={resume}/> <a href='#'><img className='absolute right-0 mr-10 pr-8' src={down}/></a>
     </div>
     <div className='flex block md:hidden mt-5 pt-20 pl-20 mb-20'> 
-      <a href='#'><img className='absolute right-0 mr-4 pr-10 ' src={resume2}/></a>
+      <a href='#'><img className='absolute right-0 mr-4 pr-10 w-1/2 ' src={resume2}/></a>
     </div>
-    <div className='hidden md:block justify-center mt-20'>
+    <div className='hidden md:block justify-center mx-auto mt-20'>
         <img src={what} className='mx-auto pt-20'/>
     </div>
   
