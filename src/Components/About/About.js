@@ -4,7 +4,7 @@ import style from './About.module.css'
 import './ProgressBar.css'
 import heading from './assets/Group 3.svg'
 import mbheading from './assets/mobilehead.svg'
-import female from './assets/Female icon (1).svg'
+import female from './assets/female.jpg'
 import progressbg from './assets/Bar2.svg'
 import progressbg2 from './assets/Bar.svg'
 import tools2 from './assets/Group 4.svg'
@@ -14,15 +14,15 @@ import resume from './/assets/My resume.svg'
 import resume2 from './/assets/Resume.svg'
 import down from './assets/ci_download.svg'
 import what from './assets/Group 7.svg'
-
+import what2 from './assets/what2.svg'
 
 export const About = ({width, percent}) => {
   let progress = percent * width;
   const [value, setValue] = React.useState(0);
-
   React.useEffect(() => {
     setValue(percent * width);
   });
+
 
   return (
     <>
@@ -63,7 +63,7 @@ export const About = ({width, percent}) => {
 
         {/* image */}
         <div className='pt-20 md:mt-20 justify-center '>
-            <img src={female} className='w-2/3 md:w-100 md:px-0 mx-auto'/>
+            <img src={female} className='w-2/3 md:px-0 mx-auto'/>
         </div>
     </div>
 
@@ -74,15 +74,18 @@ export const About = ({width, percent}) => {
       <img src={tools3} className='mx-auto'/>
     </div>
     <div className='flex hidden md:block mt-20 mr-10 pt-20 pl-20 mb-20'> 
-      <img className='absolute right-0 mr-20 pr-10' src={resume}/> <a href='#'><img className='absolute right-0 mr-10 pr-8' src={down}/></a>
+      <img className='absolute right-0 mr-20 pr-10' src={resume}/> <a href='./assets/Resume.pdf' download><img className='absolute right-0 mr-10 pr-8' src={down}/></a>
     </div>
     <div className='flex block md:hidden mt-5 pt-20 pl-20 mb-20'> 
-      <a href='#'><img className='absolute right-0 mr-4 pr-10 w-1/2 ' src={resume2}/></a>
+      <a href='./assets/Resume.pdf' download><img className='absolute right-0 mr-4 pr-10 w-1/2 ' src={resume2}/></a>
     </div>
-    <div className='hidden md:block justify-center mx-auto mt-20'>
-        <img src={what} className='mx-auto pt-20'/>
+    <div className={'hidden md:block justify-center mx-auto mt-20'}>
+      <img src={what} className='mx-auto pt-20'/>
     </div>
-  
+    <div className={'relative block md:hidden justify-center mt-20'}>
+      <img src={what2} className='mx-auto pl-2.5 pt-10 w-100'/>
+    </div>
+    
     </>
   )
 }
