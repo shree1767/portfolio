@@ -1,17 +1,15 @@
 import React from 'react'
 import icon from './assets/icon.svg'
 import style from './Main.module.css'
-import sidebar from './assets/Rectangle 30.svg'
 import github from './assets/mdi_github.svg'
 import linkedin from './assets/mdi_linkedin.svg'
 import dribble from './assets/icon-park-outline_dribble.svg'
 import twitter from './assets/ion_logo-twitter.svg'
-
 export const Main = () => {
   return (
     <main>
 {/* sidebar  */}
-<div className='flex'>
+  <div className='flex'>
 <div className='md:block mb-20 pb-20 hidden ml-20 mt-20 pt-10'>
 <div class="flex flex-col items-center mt-20 w-20 h-full overflow-hidden bg-[#121111] rounded-[28px]">
   <div class="flex items-center justify-center mt-10" href="#">

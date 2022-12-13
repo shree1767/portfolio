@@ -4,7 +4,7 @@ import style from './About.module.css'
 import './ProgressBar.css'
 import heading from './assets/Group 3.svg'
 import mbheading from './assets/mobilehead.svg'
-import female from './assets/female.jpg'
+import female from './assets/female.svg'
 import progressbg from './assets/Bar2.svg'
 import progressbg2 from './assets/Bar.svg'
 import tools2 from './assets/Group 4.svg'
@@ -62,8 +62,8 @@ export const About = ({width, percent}) => {
         </div>
 
         {/* image */}
-        <div className='pt-20 md:mt-20 justify-center '>
-            <img src={female} className='w-2/3 md:px-0 mx-auto'/>
+        <div className='pt-20 md:mt-20 mr-20 justify-center '>
+            <img src={female} className='md:mr-20 md:mt-10 mx-auto'/>
         </div>
     </div>
 
